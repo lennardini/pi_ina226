@@ -109,8 +109,8 @@ class INA226:
     __MAX_CURRENT_VALUE = 0x7FFF
     __CURRENT_LSB_FACTOR = 32768
 
-    def __init__(self, busnum=1, address=0x40,
-                 max_expected_amps=None, shunt_ohms=0.002,
+    def __init__(self, busnum=1, address=0x41,
+                 max_expected_amps=10, shunt_ohms=0.0075,
                  log_level=logging.ERROR):
         """Construct the class.
 
